@@ -46,7 +46,7 @@ hr {
 }
 
 .landing-content__img img {
-    border-radius: 10%;
+    border: 1px solid white;
     width: 200px;
     box-shadow: 10px;
     border: 1px solid black;
@@ -60,8 +60,9 @@ hr {
 
 @media screen and (min-width: 780px) {
     .landing {
-        height: 50vh;
-        
+        height: 55vh;
+        margin-top: 120px;
+        margin-bottom: 100px;
     }
 
     .landing-content {
@@ -73,7 +74,19 @@ hr {
         margin-top: 20px;
      }
 
+     .landing-content__info h1 {
+         font-size: 50px;
+         letter-spacing: 2px;
+     }
+
     .landing-content__img {
-        margin-left: 40px;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 1180px) {
+    .landing {
+        margin-top: 200px;
     }
 }

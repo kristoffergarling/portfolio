@@ -21,18 +21,39 @@
 }
 
 .color-overlay h2 {
-    font-size: 40px;
+    font-size: 30px;
     z-index: 1;
 }
 
+.techs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
 .techs i {
-    font-size: 100px;
-    padding: 20px;
+    font-size: 10vw;
+    padding: 5px;
     z-index: 1;
 }
 
 .techs i:hover {
-    color: white;
+    color: var(--highlight-color);
     transition: all 0.3s ease;
     cursor: pointer;
+}
+
+@media screen and (min-width: 780px) {
+    .color-overlay {
+        padding-bottom: 120px;
+    }
+
+    .color-overlay h2 {
+        font-size: 40px;
+    }
+
+    .techs i {
+        font-size: 100px;
+        padding: 15px;
+    }
 }

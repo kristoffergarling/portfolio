@@ -11,9 +11,10 @@ const Landing = () => {
           <h1>KRISTOFFER GÄRLING</h1>
           <hr />
           <p>
-            Data- and System Science Student at Stockholm University who's
-            passionate about developing responsive websites with reusable &
-            clean code.
+            Data- and System Science Student at Stockholm University. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam.
           </p>
           <SocialLink
             url="https://github.com/kristoffergarling"

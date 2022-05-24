@@ -1,4 +1,28 @@
+.navbar {
+    transition: all 0.5s ease-out;
+}
+
+.navbar.active {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    animation: slideInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
 .navbar-items {
+    background-color: var(--primary-color);
     height: 80px;
     display: flex;
     justify-content: center;

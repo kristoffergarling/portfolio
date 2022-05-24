@@ -1,0 +1,17 @@
+.section-header {
+    font-size: 30px;
+}
+
+.black {
+    color: black;
+}
+
+.white {
+    color: white;
+}
+
+@media screen and (min-width: 780px) {
+    .section-header {
+        font-size: 40px;
+    }
+}

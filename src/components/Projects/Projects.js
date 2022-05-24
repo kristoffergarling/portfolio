@@ -1,11 +1,12 @@
 import ProjectCard from "./ProjectCard";
+import SectionHeader from "../UI/SectionHeader";
 
 import "./Projects.css";
 
 const Projects = () => {
   return (
     <section className="projects">
-      <h2>LATEST PROJECTS</h2>
+      <SectionHeader color="black" title="LATEST PROJECTS" />
       <div className="project-cards">
         <ProjectCard
           src="https://cdn-icons-png.flaticon.com/512/711/711284.png"

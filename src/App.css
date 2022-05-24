@@ -28,9 +28,3 @@ body {
         opacity: 1;
      }
 }
-
-@media screen and (min-width: 780px) {
-    section, nav {
-        margin-bottom: 100px;
-    }
-}
