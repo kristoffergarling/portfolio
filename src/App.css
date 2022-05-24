@@ -1,11 +1,36 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #F4F6FF;
+    --highlight-color: #4F8A8B;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
 }
 
 body {
-    background-color: grey;
+    background-color: var(--primary-color);
     color: white;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+@media screen and (min-width: 780px) {
+    section, nav {
+        margin-bottom: 100px;
+    }
 }

@@ -1,8 +1,8 @@
-import classes from "./Button.module.css";
+import "./Button.css";
 
-const STYLES = [classes["btn--primary"], classes["btn--ouline"]];
+const STYLES = ["btn--primary", "btn--ouline"];
 
-const SIZES = [classes["btn--medium"], classes["btn--large"]];
+const SIZES = ["btn--medium", "btn--large"];
 
 const Button = (props) => {
   const checkButtonStyle = STYLES.includes(props.buttonStyle)

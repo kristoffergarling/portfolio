@@ -1,0 +1,38 @@
+.tech-stack {
+    background-image: url(../../images/pic-with-code.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2000px;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    filter: blur(0px);
+}
+
+.color-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0.8;
+    padding: 100px;
+}
+
+.color-overlay h2 {
+    font-size: 40px;
+    z-index: 1;
+}
+
+.techs i {
+    font-size: 100px;
+    padding: 20px;
+    z-index: 1;
+}
+
+.techs i:hover {
+    color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}

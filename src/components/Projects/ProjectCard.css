@@ -1,0 +1,24 @@
+.project-card {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.project-card img {
+    width: 90%;
+}
+
+.project-card__links Button {
+    margin: 10px 10px 10px auto;
+}
+
+@media screen and (min-width: 780px) {
+    .project-card {
+        margin: 20px 50px 20px 50px;
+    }
+
+    .project-card h3 {
+        font-size: 25px;
+    }
+}
