@@ -48,10 +48,6 @@ const Footer = () => {
       return;
     }
 
-    const SERVICE_ID = "service_a3r7llb";
-    const TEMPLATE_ID = "template_for1dui";
-    const API_KEY = "U1HvCCumB89v6NRB9";
-
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, API_KEY).then(
       (result) => {
         alert("WEnt good");
