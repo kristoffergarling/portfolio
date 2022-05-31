@@ -4,3 +4,7 @@
     font-size: 40px;
     margin: auto 25px auto auto;
 }
+
+.sendEmail {
+    cursor: pointer;
+}

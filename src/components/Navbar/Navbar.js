@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   const handleScroll = () => {
-    window.scrollY >= 300 ? setNavbar(true) : setNavbar(false);
+    window.scrollY >= 80 ? setNavbar(true) : setNavbar(false);
   };
 
   window.addEventListener("scroll", handleScroll);

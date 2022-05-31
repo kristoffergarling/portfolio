@@ -1,7 +1,3 @@
-.navbar {
-    transition: all 0.5s ease-out;
-}
-
 .navbar.active {
     position: fixed;
     top: 0;

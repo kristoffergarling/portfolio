@@ -13,7 +13,7 @@ const ProjectCard = (props) => {
 
       <div className="project-card__links">
         <Button>
-          <i class="fa-solid fa-file-code"></i>
+          <i class="fab fa-github"></i>
           <span> Code</span>
         </Button>
         <Button>

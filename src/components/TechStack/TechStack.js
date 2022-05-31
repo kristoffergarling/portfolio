@@ -8,14 +8,38 @@ const TechStack = () => {
       <div className="color-overlay">
         <SectionHeader title="TECH STACK" color="white" />
         <div className="techs">
-          <i class="devicon-html5-plain"></i>
-          <i class="devicon-css3-plain"></i>
-          <i class="devicon-javascript-plain"></i>
-          <i class="devicon-bootstrap-plain"></i>
-          <i class="devicon-git-plain"></i>
-          <i class="devicon-react-original"></i>
-          <i class="devicon-nodejs-plain"></i>
-          <i class="devicon-mongodb-plain"></i>
+          <div className="tech-group">
+            <i class="devicon-html5-plain"></i>
+            <span>HTML</span>
+          </div>
+          <div className="tech-group">
+            <i class="devicon-css3-plain"></i>
+            <span>CSS</span>
+          </div>
+          <div className="tech-group">
+            <i class="devicon-javascript-plain"></i>
+            <span>JAVASCRIPT</span>
+          </div>
+          <div className="tech-group">
+            <i class="devicon-bootstrap-plain"></i>
+            <span>BOOTSTRAP</span>
+          </div>
+          <div className="tech-group">
+            <i class="devicon-git-plain"></i>
+            <span>GIT</span>
+          </div>
+          <div className="tech-group">
+            <i class="devicon-react-original"></i>
+            <span>REACT</span>
+          </div>
+          <div className="tech-group">
+            <i class="devicon-nodejs-plain"></i>
+            <span>NODEJS</span>
+          </div>
+          <div className="tech-group">
+            <i class="devicon-mongodb-plain"></i>
+            <span>MONGODB</span>
+          </div>
         </div>
       </div>
     </section>
