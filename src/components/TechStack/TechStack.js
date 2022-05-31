@@ -9,35 +9,35 @@ const TechStack = () => {
         <SectionHeader title="TECH STACK" color="white" />
         <div className="techs">
           <div className="tech-group">
-            <i class="devicon-html5-plain"></i>
+            <i className="devicon-html5-plain"></i>
             <span>HTML</span>
           </div>
           <div className="tech-group">
-            <i class="devicon-css3-plain"></i>
+            <i className="devicon-css3-plain"></i>
             <span>CSS</span>
           </div>
           <div className="tech-group">
-            <i class="devicon-javascript-plain"></i>
+            <i className="devicon-javascript-plain"></i>
             <span>JAVASCRIPT</span>
           </div>
           <div className="tech-group">
-            <i class="devicon-bootstrap-plain"></i>
+            <i className="devicon-bootstrap-plain"></i>
             <span>BOOTSTRAP</span>
           </div>
           <div className="tech-group">
-            <i class="devicon-git-plain"></i>
+            <i className="devicon-git-plain"></i>
             <span>GIT</span>
           </div>
           <div className="tech-group">
-            <i class="devicon-react-original"></i>
+            <i className="devicon-react-original"></i>
             <span>REACT</span>
           </div>
           <div className="tech-group">
-            <i class="devicon-nodejs-plain"></i>
+            <i className="devicon-nodejs-plain"></i>
             <span>NODEJS</span>
           </div>
           <div className="tech-group">
-            <i class="devicon-mongodb-plain"></i>
+            <i className="devicon-mongodb-plain"></i>
             <span>MONGODB</span>
           </div>
         </div>

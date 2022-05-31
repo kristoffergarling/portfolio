@@ -26,6 +26,10 @@
     font-size: 1.2rem;
 }
 
+.navbar-items Button {
+    border: none;
+}
+
 .navbar-logo {
     justify-self: start;
     letter-spacing: 2px;

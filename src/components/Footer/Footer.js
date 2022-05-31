@@ -1,35 +1,84 @@
 import { useState } from "react";
+import emailjs from "emailjs-com";
 
 import SectionHeader from "../UI/SectionHeader";
 import Button from "../UI/Button";
 import SocialLink from "../UI/SocialLink";
+import NameInput from "./InputGroups/NameInput";
+import EmailInput from "./InputGroups/EmailInput";
+import MessageInput from "./InputGroups/MessageInput";
 
 import "./Footer.css";
+
+const isNameValid = (name) => {
+  let regName = /^[ a-zA-Z\-\’]+$/;
+  return regName.test(name) ? true : false;
+};
+
+const isEmailValid = (email) => {
+  return String(email)
+    .toLowerCase()
+    .match(
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+};
 
 const Footer = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const sendEmail = () => {
-    window.location = "mailto:kristoffer.g.bengtsson@gmail.com";
+  const [isSent, setIsSent] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!isNameValid(name)) {
+      setName("400");
+      return;
+    }
+
+    if (!isEmailValid(email)) {
+      console.log("error, email bad");
+      return;
+    }
+
+    if (message.length === 0) {
+      console.log("No message");
+      return;
+    }
+
+    const SERVICE_ID = "service_a3r7llb";
+    const TEMPLATE_ID = "template_for1dui";
+    const API_KEY = "U1HvCCumB89v6NRB9";
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, API_KEY).then(
+      (result) => {
+        alert("WEnt good");
+        setIsSent(true);
+      },
+      (error) => {
+        alert("bad");
+      }
+    );
+    setName("start");
+    setEmail("start");
+    setMessage("start");
   };
 
   return (
     <section className="footer">
-      <form
-        className="contact-form"
-        action="mailto:kristoffer.g.bengtsson@gmail.com"
-        method="get"
-      >
+      <form className="contact-form" onSubmit={handleSubmit}>
         <SectionHeader color="black" title="LET'S GET IN TOUCH" />
-        <input type="text" placeholder="Name"></input>
-        <input type="text" placeholder="Email"></input>
-        <textarea rows="5" placeholder="Message"></textarea>
+        <NameInput passName={setName} />
+        <EmailInput passEmail={setEmail} />
+        <MessageInput passMessage={setMessage} />
+
         <Button type="submit">Submit</Button>
       </form>
-      <SocialLink media="email" />
-      <span>(+46) 73 970 55 88</span>
+
+      <SocialLink className="contact-info" media="email" />
+      <span className="contact-info">(+46) 73 970 55 88</span>
       <div>
         <SocialLink url="https://github.com/kristoffergarling" media="github" />
         <SocialLink
